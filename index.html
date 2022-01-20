@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -15,175 +14,317 @@
   <body>
       <header class="header">
         <div class="site-brand-name">
-          <a href="index.html"><img src="/images/ODemakin-removebg-preview.png" alt="site logo"></a>
+            <a href="/index.html"><img src="/images/logo.png" alt="logo">   </a> 
+          
         </div>
-        <div class="side-bar">
-          <div class="hamburger" id="showmobile">
-            <span class="burger-1"></span>
-            <span class="burger-2"></span>
-            <span class="burger-3"></span>
-          </div>
-
-          <nav class="nav-bar">
-            <ul class="nav-links">
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="gallery.html">SKILLS</a></li>
-              <li><a href="exhibition.html">WORK</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-          </nav>
-
+        
+                <div class="toggle-area">
+                        
+                        <input type="checkbox" name="theme"
+                         class="toggle-btn" id="checkbox" />
+                        <!--the class will be usd to style the checkbox while the id will be refernced with js-->
+                        <label for="checkbox" class="label">
+                          <img src="/images/moon.png" alt="moon icon " class="fa-moon">
+                          <img src="/images/sun.png" alt="sun icon" class="fa-sun">
+                        <div class="slider-ball"></div>
+                      </div>
+                        </label>
+                        <!--the label linking with the id, when the checkbox is clicked it will toggle-->
+                        <div>
+<div class="hamburger mobile-menu" id="mobilemenu">
+<span class="burger-1"></span>
+<span class="burger-2"></span>
+<span class="burger-3"></span>
+        </div>
+                            
+        <nav class="nav-bar" id="nav">
+         <ul class= >
+                                                <li>
+<a href="#"><img src="images/icon-close.svg" alt="exit menu" class="exit-nav" id="mobileexit"></a>
+                        </li>
+        <li class="nav-move"> <a href="/index.html"> <span>1.</span>Home</a></li>
+        <li class="nav-move"><a href="#about"> <span>2.</span>about</a></li>
+        <li class="nav-move"><a href="#skills"> <span>3.</span>skill</a></li>
+        <li class="nav-move"><a href="#work"> <span>4.</span>work</a></li>
+        <li class="nav-move"><a href="#contact"> <span>5.</span>contact</a></li>
+                                        </ul>
+                                      </nav>
+                            
+                        </div>
+          
          
       </header>
     <section class="hero">
-<div class="text-bio">
-        <h2>ODEMAKIN VICTORIA</h2>
-        <P>Front End Devloper / Wordpress Devloper</P>
-        <button>DOWNLOAD MY CV</button>
-
-</div>
         <div class="hero-img">
-                <img src="/images/victoria.JPG" alt="victoria odemakin " />
-              </div>
-              <div class="side-bar">
-                      <h2>Explore my socials</h2>
-                <ul class="socials-link">
-                  <li><a href="index.html">Github</a></li>
-                  <li><a href="about.html">Linkedin</a></li>
-                  <li><a href="gallery.html">Instagram</a></li>
-                  <li><a href="exhibition.html">Twitter</a></li>
-                </ul>
+                
+        <div class="hero">
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+                        <li></li>
+			<li></li>
+			<li></li>
+                        <li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+        <div class="desktop-hero-section">
+                <div class="social-icon-box">
+                        <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+
+                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+
+                <li><a href="#"><i class="fab fa-github"></i></a></li> 
+                                
+        </ul>
+        <hr>
+                                </div>
+                <div class="text-bio">
+                        <p> Hello there <img src="/images/emojis/wave.png" alt="wave emoji"></p>
+                        <h2>i'm Vickie</h2>
+                        <h3>Front End Developer    <span>+</span> Wordpress Designer <img src="/images/emojis/technologist.png" alt="technologist emoji"></h3>
+                        <div class="header-paragraph">
+                        <p>I'm a <span>frontend developer</span>  and <span>WordPress desginer</span>  based in Lagos <br> I build things for the <span>web</span>  and make make your site responsive,creative and user-friendly.</p>
+                                <div>
+                        <button class="header-btn">DOWNLOAD MY CV</button>     
+                                                </div>
+                                        </div>
+                                </div>           
+                             <div class="email-contact">
+<a href=""><p>victoriaodemakin@gmail.com </p><hr> </a>
+                             </div>   
+        </div>
+        <div class="mobile-hero-section">
+                <div class="text-bio">
+                        <p> Hello there <img src="/images/emojis/wave.png" alt="wave emoji"></p>
+                                        <h2>i'm Vickie</h2>
+                                        <h3>FrontEnd Developer <span><br>+<br></span> Wordpress Designer <img src="/images/emojis/technologist.png" alt="technologist emoji"></h3>
+                                        <div class="header-paragraph">
+                                                <p>I'm a <span>frontend developer</span>  and <span>WordPress desginer</span>  based in Lagos <br> I build things for the <span>web</span>  and make make your site responsive,creative and user-friendly.</p>
+                                        </div>
+                                        <div>
+                <button class="header-btn">DOWNLOAD MY CV</button>     
+                                        </div>
+                        <div class="developer-image" >
+                                <div class="developer-image-border">
+                                    
+                                </div>
+                         </div>
+                                <div class="social-icon-box">
+                                        <ul>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                
+                                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                
+                                                <li><a href="#"><i class="fab fa-github"></i></a></li> 
+                                                
+                                                </ul>
+                                                </div>
+                                
+                                </div>
+        </div>
 
               </div>
-            </div>
+             
+        
+            
     </section>
-    <main>
-            <section class="info-me">
-                    <div>
-                            <h3>me, myself and i</h3>
-                            <p> I'm a  Second Class Upper Division graduate from the Department of
-                                Computer Science and Engineering with a degree in Computer Engineering. As a frontend and WordPress Developer with a year of experience in frontend developement, I'm familiar with frontend technologies and work to create minimal and responsive websites. The quality of my work is most important to me, Open to new opportunies while crating a symbiotic realationship between myself and my clients</p>
+   
+     <main> 
+        <section class="info-me" id="about">
+                <div class="info-warpper">
+                <h3>me, myself and i <hr></h3> 
+                <p> I'm a  Second Class Upper Division graduate from the Department of
+                Computer Science and Engineering with a degree in <span>Computer Engineering</span>. <br> As a  <span>
+                        frontend and WordPress Developer
+                </span>     with a year of experience in frontend developement, I'm familiar with frontend technologies and work to create <span>minimal and responsive websites</span> . The quality of my work is most important to me, Open to new opportunies while <span>
+                        symbiotic realationship 
+                </span> crating a between myself and my clients</p>
+<br>
+<p> Here are a few technologies I've been working with recently:</p>
+<br>
+<div class="skill-btn">
+        <div class="skill-btn1">
+<button class="btn ">HTML</button>
+        </div>
+        <div class="skill-btn2">
+                <button class="btn ">Css</button>
+        </div>
+        <div class="skill-btn3">
+                <button class="btn ">JavaScript</button>
+        </div>
+        <div class="skill-btn4">
+                <button class="btn ">WordPress</button>
+        </div>
+        <div class="skill-btn5">
+                <button class="btn ">Github</button>   
+        </div>
 
-                                <button class="btn success">Success</button>
-<button class="btn info">HTML</button>
-<button class="btn warning">Css</button>
-<button class="btn danger">JavaScript</button>
-<button class="btn default">WordPress</button>
-<button class="btn default">Github</button>
+        
+</div>
+
+
+
+
+
                     </div>
-                    <div>
-                            <button>
-                                    Explore my works
-                            </button>
-                    </div>
+                    <div class="developer-image" >
+                            <div class="developer-image-border">
+                                    
+                            </div>
+                </div>
+
             </section>
-            <section class="info-skills">
 
-                <div class="technical-skills">
-                        <h3>Technical skills</h3>
-                        <div class="skill-bar-1">
+            <div class="technical-skills-info">
+                   
+                <div class="technical-skills-info-col-2">
+                        <section class="container-2">
+                                <h2>Professional skills <hr></h2>
+                                <div class="professional-skills">
+                                <div class="skill-bar-2">
+                                                        
+                                                        <div class="circular-progress">
+                                                                
+                                                        <div class="value-container">0%</div>
+                                                        <h3>Communication</h3>
+                                                              </div>
+                                                </div>
+                                        <div class="skill-bar-2">
+                                        <div class="circular-progress team-2">
+                                        <div class="value-container team-container-2">0%</div>
+                                        <h3>Team Work</h3>
+                                        </div>
+                                        </div>
+                                        <div class="skill-bar-2">
+                                        <div class="circular-progress circular-progress-3">
+                                        <div class="value-container value-container-3">0%</div>
+                                        <h3>ProjectMangement</h3>
+                                        </div>
+                                                </div>
+                                        <div class="skill-bar-2">
+                                        <div class="circular-progress circular-progress-4">
+                                        <div class="value-container value-container-4">0%</div>
+                                                <h3>Creativity</h3>
+                                                </div>
+                                                </div>
+                                        </div>
+                
+                        </section>         
+                </div>
+                    <div class="technical-skills-info-col-1">
+                        <section class="container skills-info" id="skills">
+                    
+                                <h2>Technical skills <hr></h2>
                                 <div class="skill">
                                         <h3>HTML</h3>
-                                        <h4>95%</h4>
-                                        <span class="skill-bar"></span>
-                                        <span class="fill-bar html"></span>
-                                    </div>
-                                    <div class="skill">
-                                        <h3>CSS</h3>
-                                        <h4>85%</h4>
-                                        <span class="skill-bar"></span>
-                                        <span class="fill-bar css"></span>
-                                    </div>
-                                    <div class="skill">
-                                        <h3>JavaScript</h3>
-                                        <h4>65%</h4>
-                                        <span class="skill-bar"></span>
-                                        <span class="fill-bar javascript"></span>
-                                    </div>
-                                    <div class="skill">
-                                        <h3>WordPress</h3>
-                                        <h4>85%</h4>
-                                        <span class="skill-bar"></span>
-                                        <span class="fill-bar php"></span>
-                                    </div>
-                                    <div class="skill">
-                                        <h3><Github></h3>
-                                        <h4>85%</h4>
-                                        <span class="skill-bar"></span>
-                                        <span class="fill-bar php"></span>
-                                    </div>
-                                    
+                                                        <h4>95%</h4>
+                                                        <span class="skill-bar"></span>
+                                                        <span class="fill-bar html"></span>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <h3>CSS</h3>
+                                                        <h4>85%</h4>
+                                                        <span class="skill-bar"></span>
+                                                        <span class="fill-bar css"></span>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <h3>JavaScript</h3>
+                                                        <h4>65%</h4>
+                                                        <span class="skill-bar"></span>
+                                                        <span class="fill-bar javascript"></span>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <h3>WordPress</h3>
+                                                        <h4>70%</h4>
+                                                        <span class="skill-bar"></span>
+                                                        <span class="fill-bar php"></span>
+                                                    </div>
+                                                    <div class="skill">
+                                                        <h3>Github</h3>
+                                                        <h4>65%</h4>
+                                                        <span class="skill-bar"></span>
+                                                        <span class="fill-bar php"></span>
+                                                    </div>
+                                                    
+                
+                                        </div>
+                                </div>
+                        </section>
+                        
+                    </div>
+                
+        </div>
+           
 
-                        </div>
-                </div>
-                <div class="professional-skills">
-                        <h3>Professional skills</h3>
-                        <div class="skill-bar-2">
-                                <div class="circular-progress">
-                                        
-                                        <div class="value-container">0%</div>
-                                        <h3>Communication</h3>
-                                      </div>
-                        </div>
-                        <div class="skill-bar-2">
-                                <div class="circular-progress">
-                                        <div class="value-container">0%</div>
-                                        <h3>Team Work</h3>
-                                      </div>
-                        </div>
-                        <div class="skill-bar-2">
-                                <div class="circular-progress">
-                                        <div class="value-container">0%</div>
-                                        <h3>Project Mangement</h3>
-                                      </div>
-                        </div>
-                        <div class="skill-bar-2">
-                                <div class="circular-progress">
-                                        <div class="value-container">0%</div>
-                                        <h3>Creativity</h3>
-                                      </div>
-                        </div>
-                </div>
-        </section>
-        <section class="projects">
+        <section class="projects" id="work">
+                <h2>Things I have built.. <hr></h2>
                 <div class="project-container">
                         <div class="project-1">
-                                <img src="/images/Screenshot (6).png" alt="ife-mementos">
-                                <h4> ife-mementos art site</h4>
-                                <a href=""> <button class="project-btn"> View project</button></a>
-                                <a href=""> <button class="project-btn"> Source Code</button></a>
-
+                                <div class="project-info">
+                                        <h3><span>A Featured Project</span> <br> ife-mementos art site</h3>
+                        <p>
+                A minimal, <span>responsive</span> art site built in <span>VS Code</span>, The following technologies were used <span>HTML, Css</span>, and <span>vanilla JavaScript</span></p>
+       <div class="live-project">
+        <a href="https://victoriaodemakin.github.io/ife-mementos"> <button class="project-btn"> View Live Site</button></a>
+        <a href="https://github.com/victoriaodemakin/ife-mementos"> <button>Source Code</button></a></div>
+       </div>                           
                         </div>
-                        <div class="project-1">
-                                <img src="/images/immersive.jpg" alt="immersive music site">
-                                <h4> immersive art site</h4>
-                                <a href=""> <button class="project-btn"> View project</button></a>
-                                <a href=""> <button class="project-btn"> Source Code</button></a>
+                        
 
+                        <div class="project-2">
+                                <div class="project-info">
+                                        <h3><span>A Featured Project</span> <br> blogr</h3>
+                        <p>
+                A minimal, <span>responsive</span> art site built in <span>VS Code</span>, The following technologies were used <span>HTML, Css</span>, and <span>vanilla JavaScript</span></p>
+       <div class="live-project">
+        <a href="https://victoriaodemakin.github.io/blogr-landing-animation-page"> <button class="project-btn"> View Live Site</button></a>
+        <a href="https://github.com/victoriaodemakin/blogr-landing-animation-page"> <button class="project-btn"> Source Code</button></a></div>
+       </div>                           
                         </div>
-                        <div class="project-1">
-                                <img src="/images/sunny-side.png" alt="sunny-side">
-                                <h4> sunny-side</h4>
-                                <a href=""> <button class="project-btn"> View project</button></a>
-                                <a href=""> <button class="project-btn"> Source Code</button></a>
 
+
+                        <div class="project-3">
+                                <div class="project-info">
+                                        <h3><span>A Featured Project</span> <br> sunny-side</h3>
+                        <p>
+                A minimal, <span>responsive</span> art site built in <span>VS Code</span>, The following technologies were used <span>HTML, Css</span>, and <span>vanilla JavaScript</span></p>
+       <div class="live-project">
+        <a href="https://victoriaodemakin.github.io/landing-page"> <button class="project-btn"> View Live Site</button></a>
+        <a href="https://github.com/victoriaodemakin/landing-page"> <button class="project-btn"> Source Code</button></a></div>
+       </div>                           
                         </div>
-                        <div class="project-1">
-                                <img src="/images/b.jpg" alt="blogr ">
-                                <h4> blogr</h4>
-                                <a href=""> <button class="project-btn"> View project</button></a>
-                                <a href=""> <button class="project-btn"> Source Code</button></a>
 
+                        <div class="project-4">
+                                <div class="project-info">
+                <h3><span>A Featured Project</span> <br> immersive art site
+                        <p>
+                A minimal, <span>responsive</span> art site built in <span>VS Code</span>, The following technologies were used <span>HTML, Css</span>, and <span>vanilla JavaScript</span></p>
+       <div class="live-project">
+        <a href="https://victoriaodemakin.github.io/landing-page-theme-change"> <button class="project-btn"> View Live Site</button></a>
+        <a href="https://github.com/victoriaodemakin/landing-page-theme-change"> <button class="project-btn"> Source Code</button></a></div>
+       </div>                           
                         </div>
                 </div>
 
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
                 <div class="contact-area">
                       <div class="contact-col-1">
-                              <h3>contact</h3>
-                              <p>I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.
+                              <h3>contact <hr></h3>
+                              <p>I’m interested in <span>
+                                freelance opportunities – 
+                              </span> especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the <span>form.</span> 
                         </p>
                         <div class="form">
                                 <form action="action_page.php">
@@ -232,23 +373,27 @@
                 </div>
         </section>
         <footer>
-                <div class="social-icon box">
-                <ul>
-                <li><a href="#"><img src="images/icon-twitter.svg" alt="icon-instagram icon" class="icons"></a></li>
-                <li><a href="#"><img src="images/icon-instagram.svg" class="icons" alt="icon-twitter"></a></li> 
-                
-                </ul>
-                </div>
-                </div>
+                <div class="social-icon-box">
+                        <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+
+                <li><a href="#"><i class="far fa-envelope"></i></a></li>
+
+                <li><a href="#"><i class="fab fa-github"></i></a></li> 
+                                </ul>
+                                </div>
         <div class="author-tag">
-        <h4><span>&copy;</span> Coded by Odemakin Victoria</h4>
+        <h4><span>&copy;</span> Designed and built by Odemakin Victoria</h4>
         
         </div>
         <div class="author">
         </footer>
-    </main>
+    </main>  
 
 
-
+<script src="/js/script.js"></script>
+<script src="/js/sticky.js"></script>
   </body>
 </html>
