@@ -12,6 +12,7 @@ function fixNav() {
 var mobilemenu = document.getElementById("mobilemenu");
 var nav = document.getElementById("nav");
 var mobilemexit = document.getElementById("mobileexit");
+var toggleNav = document.getElementById("toggleNav");
 
 mobilemenu.addEventListener("click", function (e) {
   nav.classList.toggle("nav-bar");
@@ -22,3 +23,14 @@ mobileexit.addEventListener("click", function (e) {
   nav.classList.add("nav-bar");
   e.preventDefault();
 });
+
+document.onclick = function (e) {
+  if (e.target.id !== "mobilemenu" && e.target.id !== "mobileexit") {
+    nav.classList.add("nav-bar");
+  }
+};
+
+gsap
+  .timeline()
+  .from(".header", { opacity: 0 })
+  .from(".nav-move", { opacity: 0 }, { stagger: 0.5 }, { y: -50 });
