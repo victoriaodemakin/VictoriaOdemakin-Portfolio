@@ -73,3 +73,108 @@ let progress4 = setInterval(() => {
     clearInterval(progress4);
   }
 }, speed4);
+
+gsap.registerPlugin(ScrollTrigger);
+
+const timeline = gsap.timeline();
+timeline
+  .from(
+    ".nav-move",
+    { opacity: 0, duration: 0.7, y: -50, ease: "power2.inOut", stagger: 0.2 },
+    "<0.5"
+  )
+
+  .from(".anime-1", {
+    opacity: 0,
+    y: 50,
+    duration: 0.7,
+    ease: "power2.inOut",
+    stagger: 0.2,
+  })
+  .from(".social-anime", {
+    opacity: 0,
+    duration: 0.5,
+    ease: "power2.inOut",
+    stagger: 0.2,
+  });
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".hero-section ",
+    start: "bottom 10%",
+    end: "bottom top",
+    toggleActions: "restart restart reset reverse ",
+  },
+});
+tl.from(".info-me", {
+  y: 100,
+  opacity: 0,
+  duration: 1,
+  delay: 0.2,
+  ease: "power2.inOut",
+});
+
+let t2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".info-me ",
+    start: "center 20%",
+    end: "top 60%",
+    toggleActions: "restart restart restart reverse ",
+  },
+});
+t2.from(".technical-skills-info", {
+  y: 100,
+  opacity: 0,
+  duration: 1,
+  delay: 0.6,
+  ease: "power2.inOut",
+});
+
+let t3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".technical-skills-info ",
+    start: "center 40%",
+    end: "top 70%",
+    toggleActions: "restart restart restart restart ",
+  },
+});
+
+t3.from(
+  ".project-anime",
+  {
+    y: 100,
+    opacity: 0,
+    duration: 4,
+    delay: 0.2,
+    stagger: 0.1,
+    ease: "power1.inOut",
+  },
+  "<0.1"
+);
+
+let t4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".project-anime ",
+    start: "center 20%",
+    end: "top 70%",
+    toggleActions: "restart restart reverse reverse ",
+  },
+});
+t4.from(".contact", {
+  y: 100,
+  opacity: 0,
+  duration: 1,
+  delay: 3,
+  ease: "power2.inOut",
+});
+// .from(".info-anime", {
+//   x: 50,
+//   opacity: 0,
+//   duration: 0.5,
+//   ease: "power4.inOut",
+// })
+// .from(".info-anime-2", {
+//   x: 50,
+//   opacity: 0,
+//   duration: 0.5,
+//   ease: "power4.inOut",
+// });

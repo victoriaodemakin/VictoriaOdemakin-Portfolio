@@ -29,8 +29,3 @@ document.onclick = function (e) {
     nav.classList.add("nav-bar");
   }
 };
-
-gsap
-  .timeline()
-  .from(".header", { opacity: 0 })
-  .from(".nav-move", { opacity: 0 }, { stagger: 0.5 }, { y: -50 });

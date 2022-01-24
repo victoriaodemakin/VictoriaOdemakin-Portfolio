@@ -104,6 +104,9 @@ p {
   color: var(--paragraph-text);
   line-height: 2em;
 }
+a {
+  text-decoration: none;
+}
 
 .toggle-area {
   display: flex;
@@ -605,7 +608,7 @@ button {
   text-transform: uppercase;
   font-family: var(--font-3);
   background: transparent;
-  color: var(--green-text);
+  color: var(--navy-bg);
   border-radius: 5px;
   margin: 3em auto;
 }
@@ -696,7 +699,7 @@ button:after {
       rgba(100, 255, 218, 0.7),
       rgba(100, 255, 218, 0.7)
     ),
-    url(/images/vickie.jpg);
+    url(images/vickie.jpg);
   width: 280px;
   height: 280px;
   background-size: cover;
@@ -707,7 +710,7 @@ button:after {
 }
 .developer-image:hover {
   background: linear-gradient(rgba(60, 245, 202, 0), rgba(100, 255, 218, 0)),
-    url(/images/vickie.jpg);
+    url(images/vickie.jpg);
   width: 300px;
   height: 300px;
   background-size: cover;
@@ -1655,7 +1658,7 @@ footer .author-tag h4 span {
         rgba(100, 255, 218, 0.7),
         rgba(100, 255, 218, 0.7)
       ),
-      url(/images/vickie.jpg);
+      url(images/vickie.jpg);
     width: 80%;
     height: 50vh;
     background-size: cover;
@@ -1668,7 +1671,7 @@ footer .author-tag h4 span {
 
   .info-me .developer-image:hover {
     background: linear-gradient(rgba(60, 245, 202, 0), rgba(100, 255, 218, 0)),
-      url(/images/vickie.jpg);
+      url(images/vickie.jpg);
     width: 80%;
     height: 50vh;
     background-size: cover;

@@ -30,11 +30,45 @@ Users should be able to:
 
 ### Screenshot
 
+### The desktop site overview
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+  The designs were created to the following widths:
+
+  -Tablet: 768px
+
+- Desktop: 1440px
+
 ![active desktop desgin](images/desktop-view1.png)
+
+###
+
 ![active desktop desgin](images/desktop-view2.png)
-![active desktop desgin](images/desktop-view2.png)
-![mobile desgin](images/mobile-view1.png)
+
+###
+
+![active desktop desgin](images/desktop-view3.png)
+
+### The mobile site overview
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+  The designs were created to the following widths:
+
+- Mobile: 375px
+  ![mobile desgin](images/mobile-view1.png)
+
+###
+
 ![mobile menu desgin](images/mobile-view2.png)
+
+###
+
 ![mobile desgin](images/mobile-view3.png)
 
 ### Links

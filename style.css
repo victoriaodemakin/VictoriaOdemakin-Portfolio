@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 0%);
+  --side-bg-color: hsl(197, 85%, 69%);
+  --fontx: "Josefin Sans", sans-serif;
+  --fonty: "Alata", sans-serif;
+}
+
+.cv-body {
+  font-family: "Alata", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  display: grid;
+  grid-template-columns: 4em 5fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". header header "
+    ". main sidebar";
+}
+.header-info-xx {
+  grid-area: header;
+}
+.main-side {
+  grid-area: main;
+}
+aside {
+  grid-area: sidebar;
+}
+img {
+  width: 100%;
+}
+.header-info-xx h1 {
+  color: var(--side-bg-color);
+  font-size: 1.5em;
+  font-family: var(--fontx);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+}
+.main-column-xx h2 {
+  color: var(--side-bg-color);
+  font-size: 1em;
+  font-family: var(--fontx);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+}
+.main-column-xx h3 {
+  font-size: 0.8em;
+  font-family: var(--fontx);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+}
+.main-column-xx h4 {
+  font-size: 0.5em;
+  font-family: var(--fontx);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.header-info-xx {
+  margin: 2em 0;
+  display: flex;
+}
+.header-info-xx p {
+  color: var(--text-color);
+  font-family: var(--fonty);
+  font-size: 15px;
+  margin: 0.5em 0;
+  font-weight: 400;
+}
+.medium {
+  color: var(--text-color);
+  font-family: var(--fonty);
+  font-size: 15px;
+  margin: 0.5em 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header-info-xx a {
+  color: var(--side-bg-color);
+  font-family: var(--fonty);
+  font-size: 12px;
+  margin: 0.5em 0;
+}
+.main-column-xx {
+  margin: 2em 0;
+  padding-right: 2em;
+}
+
+.main-column-xx p {
+  color: var(--text-color);
+  font-family: var(--fonty);
+  font-size: 15px;
+  line-height: 1.8em;
+  text-align: justify;
+  font-weight: 400;
+}
+h3 {
+  margin: 0.5em;
+}
+.year {
+  text-align: left;
+  color: var(--side-bg-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+.education h3 {
+  margin: 1em 0;
+}
+.education h4 {
+  font-size: 10px;
+}
+aside {
+  background-color: var(--side-bg-color);
+}
+.side h3 {
+  font-size: 1em;
+  font-family: var(--fontx);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--bg-color);
+  text-align: left;
+  margin: 0.5em 0;
+  padding: 0 2em;
+}
+.side p {
+  color: var(--bg-color);
+  font-family: var(--fonty);
+  font-size: 15px;
+  line-height: 1.8em;
+  text-align: left;
+  text-transform: capitalize;
+  padding: 0 2em;
+}
+.logo {
+  width: 50%;
+  margin: 1em;
+  cursor: pointer;
+}
+.intern {
+  font-size: 1.5em;
+  text-align: center;
+}
