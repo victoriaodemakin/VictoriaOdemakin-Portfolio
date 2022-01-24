@@ -108,53 +108,6 @@ a {
   text-decoration: none;
 }
 
-.toggle-area {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  position: relative;
-  left: 40%;
-  padding: 0.5em 1em -3em 1em;
-}
-
-.label {
-  background: var(--navy-bg);
-  display: flex;
-  /* the align center and justify properties affect the icon in the label tag */
-  align-items: center;
-  justify-content: space-between;
-  /* padding: 25px; */
-  border: 2px solid var(--green-text);
-  border-radius: 50px;
-  height: 26px;
-  width: 50px;
-  position: relative;
-}
-.fa-moon {
-  width: 15px;
-}
-.fa-sun {
-  width: 15px;
-}
-.toggle-btn {
-  cursor: pointer;
-  opacity: 0;
-  position: absolute;
-}
-.toggle-btn:checked + .label .slider-ball {
-  transform: translateX(24px);
-}
-
-.slider-ball {
-  background-color: var(--bg);
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
-}
 .hero {
   width: 100%;
   background-color: var(--navy-bg);
@@ -1066,7 +1019,7 @@ main .info-me .developer-image {
       rgba(100, 255, 218, 0.7),
       rgba(100, 255, 218, 0.7)
     ),
-    url(/images/ife-memetos.png);
+    url(images/ife-memetos.png);
   width: 100%;
   height: 50vh;
   background-size: cover;
@@ -1156,7 +1109,7 @@ main .info-me .developer-image {
       rgba(100, 255, 218, 0.7),
       rgba(100, 255, 218, 0.7)
     ),
-    url(/images/immersive.jpg);
+    url(images/immersive.jpg);
   width: 100%;
   height: 50vh;
   background-size: cover;
@@ -1170,7 +1123,7 @@ main .info-me .developer-image {
       rgba(100, 255, 218, 0.7),
       rgba(100, 255, 218, 0.7)
     ),
-    url(/images/sunny-side.png);
+    url(images/sunny-side.png);
   width: 100%;
   height: 50vh;
   margin-bottom: 1em;
@@ -1185,7 +1138,7 @@ main .info-me .developer-image {
       rgba(100, 255, 218, 0.7),
       rgba(100, 255, 218, 0.7)
     ),
-    url(/images/b.jpg);
+    url(images/b.jpg);
   width: 100%;
   height: 50vh;
   background-size: cover;
@@ -1754,7 +1707,7 @@ footer .author-tag h4 span {
         rgba(100, 255, 218, 0.7),
         rgba(100, 255, 218, 0.7)
       ),
-      url(/images/ife-memetos.png);
+      url(./images/ife-memetos.png);
     width: 70%;
     height: 50vh;
     background-size: cover;
@@ -1768,7 +1721,7 @@ footer .author-tag h4 span {
         rgba(100, 255, 218, 0.7),
         rgba(100, 255, 218, 0.7)
       ),
-      url(/images/immersive.jpg);
+      url(images/immersive.jpg);
     width: 70%;
     height: 50vh;
     background-size: cover;
@@ -1782,7 +1735,7 @@ footer .author-tag h4 span {
         rgba(100, 255, 218, 0.7),
         rgba(100, 255, 218, 0.7)
       ),
-      url(/images/sunny-side.png);
+      url(sunny-side.png);
     width: 70%;
     height: 50vh;
     margin-bottom: 3em;
@@ -1797,7 +1750,7 @@ footer .author-tag h4 span {
         rgba(100, 255, 218, 0.7),
         rgba(100, 255, 218, 0.7)
       ),
-      url(/images/b.jpg);
+      url(../images/b.jpg);
     width: 70%;
     height: 50vh;
     background-size: cover;
